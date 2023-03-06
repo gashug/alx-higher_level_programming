@@ -1,0 +1,12 @@
+#!/bin/bash
+filename="${PYFILE}"
+
+if [ ! -f "${filename}" ]; then
+  echo "Error: file not found: ${filename}"
+  exit 1
+fi
+
+python -m py_compile "${filename}"
+compiled_filename="${filename}c"
+mv "${compiled_filename}" "${filename}c"
+
