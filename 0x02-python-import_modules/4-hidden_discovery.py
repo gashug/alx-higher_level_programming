@@ -2,14 +2,15 @@
 import imp
 import sys
 
-module_name = 'hidden_4'
-module = imp.load_compiled(module_name, module_name + '.pyc')
+if __name__ == "__main__":
+    module_name = 'hidden_4'
+    module = imp.load_compiled(module_name, module_name + '.pyc')
 
-names = dir(module)
+    names = dir(module)
 
-names = [name for name in names if not name.startswith('__')]
+    names = [name for name in names if not name.startswith('__')]
 
-names.sort()
+    names.sort()
 
-for name in names:
-    print(name)
+    for name in names:
+        print(name)

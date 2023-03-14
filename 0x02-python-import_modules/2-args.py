@@ -2,12 +2,16 @@
 from sys import argv
 
 if __name__ == "__main__":
-    args = argv[1:]  # skip the first argument, which is the script name
+    args = argv[1:]
     num_args = len(args)
 
     if num_args == 0:
         print("No arguments.")
-    else:
-        print(f"{num_args} {'argument' if num_args == 1 else 'arguments'}:")
+    elif num_args == 1:
+        print("{} {}:".format(num_args, 'argument'))
         for i, arg in enumerate(args):
-            print(f"{i+1}: {arg}")
+            print("{}: {}".format(i + 1, arg))
+    else:
+        print("{} {}:".format(num_args, 'arguments'))
+        for i, arg in enumerate(args):
+            print("{}: {}".format(i + 1, arg))
