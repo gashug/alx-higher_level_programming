@@ -6,5 +6,5 @@ def safe_print_integer(value):
         # If we get here, the value was printed correctly as an integer
         return True
     except (ValueError, TypeError):
-        # If we get a ValueError or TypeError, the value cannot be formatted as an integer
+        # If we get any error value cannot be formatted as an integer
         return False
