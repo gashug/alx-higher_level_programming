@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+"""Define a class Square."""
+
+
 class Square:
-    """
-    A square is a four-sided mathematical figure
-    whose sides are equal in length
-    """
+    """Represents a square"""
     def __init__(self, size):
+        """Initialize a new Square.
+
+        Args:
+            size (int): The size of the new square.
+        """
         self.__size = size
