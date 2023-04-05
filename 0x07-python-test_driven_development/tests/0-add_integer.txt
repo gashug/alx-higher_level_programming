@@ -1,0 +1,66 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+____________________
+
+First import function from the mosule:
+
+>>> add_integer = __import__('0-add_integer).add_integer
+
+Addition of two integers
+>>> add_integer(3,4)
+7
+
+Adding a negative and a positive integer
+>>> add_integer(-3, 4)
+1
+
+Addition of two negative integers
+>>> add_integers(-3, -4)
+-7
+
+Addition of an integer and zero
+>>> add_integer(0, 4)
+4
+
+Addition of a float and an integer
+>>> add_integer(3, 4.7)
+7
+
+Addition of two float values casted as integers
+>>> add_integers(3.2, 4.8)
+7
+
+Addition of negative float values
+>>> add_integers(-3.4, -4.6)
+-7
+
+Addition of one passed value and the default b
+>>> add_integers(3)
+111
+
+Addition of a string and integer
+>>> add_integers('string', 4)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Addition with no paramters passed
+>>> add_integers(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Addition of an integer and a string
+>>> add_integers(3, 'string')
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Addition of two strings
+>>> add_integers('string', 'anotherone')
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Addition of too big a number
+>>> add_integers(3, float('inf'))
+Traceback (most recent call last):
+OverflowError: value too large
