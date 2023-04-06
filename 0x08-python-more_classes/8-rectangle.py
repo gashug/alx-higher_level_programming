@@ -15,9 +15,9 @@ class Rectangle:
             width(int): The width of the new square
             height(int): The height of the new square
         """
-        type(self).number_of_instances += 1
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -76,7 +76,7 @@ class Rectangle:
 
     def __del__(self):
         """Deletes an instance of a rectangle"""
-        type(self).number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod
