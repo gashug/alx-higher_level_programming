@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Define a class Rectangle"""
 
 class Rectangle:
@@ -50,7 +50,7 @@ class Rectangle:
 
     def perimeter(self):
         """Return the distance round the rectangle"""
-        if self.__height == 0 or self.__width == 0:
+        if self.height == 0 or self.width == 0:
             return 0
         return 2 * (self.height + self.width)
 
@@ -69,7 +69,7 @@ class Rectangle:
                     rec_shape += "\n"
         return rec_shape
 
-    def __repr(self):
+    def __repr__(self):
         """Return a string rep. of the rectangle"""
         return "Rectangle({0}, {1})".format(self.__width, self.__height)
 

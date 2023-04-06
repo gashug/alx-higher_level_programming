@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Define a class Rectangle"""
 
 class Rectangle:
@@ -69,9 +69,9 @@ class Rectangle:
                     rec_shape += "\n"
         return rec_shape
 
-    def __repr(self):
+    def __repr__(self):
         """Return a string rep. of the rectangle"""
-        return "Rectangle({0}, {1})".format(self.__width, self.__height)
+        return "Rectangle({0}, {1})".format(self.width, self.height)
 
     def __del__(self):
         """Deletes an instance of a rectangle"""

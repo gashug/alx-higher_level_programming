@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Define a class Rectangle"""
 
 class Rectangle:
@@ -42,28 +42,28 @@ class Rectangle:
 
     def area(self):
         """Return the current area of the rectangle"""
-        return self.__width * self.__height
+        return self.width * self.height
 
     def perimeter(self):
         """Return the distance round the rectangle"""
-        if self.__height == 0 or self.__width == 0:
+        if self.height == 0 or self.width == 0:
             return 0
-        return 2 * (self.__height + self.__width)
+        return 2 * (self.height + self.width)
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
         The # character represents the rectangle.
         """
-        if self.__height == 0 or self.__width == 0:
+        if self.height == 0 or self.width == 0:
             return ""
         else:
             rec_shape = ""
             for i in range(self.height):
-                rec_shape += "#" * self.__width
-                if i < self.__height - 1:
+                rec_shape += "#" * self.width
+                if i < self.height - 1:
                     rec_shape += "\n"
         return rec_shape
 
-    def __repr(self):
-        return "Rectangle({0}, {1})".format(self.__width, self.__height)
+    def __repr__(self):
+        return "Rectangle({0}, {1})".format(self.width, self.height)
