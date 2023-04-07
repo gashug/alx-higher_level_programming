@@ -3,10 +3,10 @@
 
 
 def matrix_divided(matrix, div):
-    """Divide all elements of a matrix.
+    """Divide the elements of a matrix by a given integer.
 
     Args:
-        matrix (list): A list of lists of ints or floats.
+        matrix (list): list of lists of ints/floats.
         div (int/float): The divisor.
     Raises:
         TypeError: If the matrix contains non-numbers.
@@ -18,8 +18,8 @@ def matrix_divided(matrix, div):
     """
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
-            not all((isinstance(ele, int) or isinstance(ele, float))
-                    for ele in [num for row in matrix for num in row])):
+            not all((isinstance(el, int) or isinstance(el, float))
+                    for el in [num for row in matrix for num in row])):
         raise TypeError("matrix must be a matrix (list of lists) of "
                         "integers/floats")
 

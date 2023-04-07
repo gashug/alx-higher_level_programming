@@ -1,0 +1,50 @@
+The ``2-matrix_divided`` module
+==============================
+
+Using ``matrix_divided``
+-----------------------
+
+First import function from module:
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+
+Division of a matrix by an integer
+>>> matrix_divided([[24, 16, 40], [4, 8, 12]], 4)
+[[6, 4, 10], [1, 2, 3]]
+
+Division of float values by integer
+>>> matrix_divided([[24.4, 16.8, 40.21], [4.5, 8.6, 12.7]], 4)
+[[6.1, 4.2, 10.05], [1.13, 2.15, 3.18]]
+
+Division of unequal size matrices
+>>> matrix_divided([[24.4, 16.8, 40.21], [4.5, 12.7]], 4)
+Traceback (most recent call last)
+TypeError: Each row of the matrix must have the same size
+
+Division by a non-integer divisor
+>>> matrix_divided([[24, 16, 40], [4, 8, 12]], 0)
+Traceback (most recent call last)
+ZeroDivisionError: division by zero
+
+Division of a non integer or float value
+>>> matrix_divided([[24, 16, 'string', [4, 8, 12]], 4)
+Traceback (most recent call last)
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Division of not a list of lists
+>>> matrix_divided([24, 16, 'string'], 4)
+Traceback (most recent call last)
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided('string', 4)
+Traceback (most recent call last)
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(None, 4)
+Traceback (most recent call last)
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided([], 4)
+Traceback (most recent call last)
+TypeError: matrix must be a matrix (list of lists) of integers/floats

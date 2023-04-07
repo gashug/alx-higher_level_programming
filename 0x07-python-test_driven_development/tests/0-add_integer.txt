@@ -4,7 +4,7 @@ The ``0-add_integer`` module
 Using ``add_integer``
 ____________________
 
-First import function from the mosule:
+First import function from the module:
 
 >>> add_integer = __import__('0-add_integer).add_integer
 
