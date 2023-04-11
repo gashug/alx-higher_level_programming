@@ -1,0 +1,18 @@
+The ``1-my_list.py`` module
+============================
+
+Using ``1-my_list``
+___________________
+
+First import function from module:
+
+>>> my_list = __import__('1-my_list').MyList
+
+Sorting of list
+>>> my_list([5, 2, 8, 4, 1])
+[1, 2, 4, 5,8]
+
+Sorting of non-integers
+>>> my_list(['for', 'now', 'hare'])
+Traceback (most recent call last):
+TypeError: a must be an integer
