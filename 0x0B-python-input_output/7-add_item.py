@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""adds aall args to a list and saves them in a file"""
-
+"""adds all args to a list and saves them in a file"""
 from sys import argv
 
 if __name__ == "__main__":

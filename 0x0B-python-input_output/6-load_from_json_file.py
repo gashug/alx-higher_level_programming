@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""defines json file rdng fn."""
 import json
 
 

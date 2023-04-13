@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defines a class student"""
 
+
 class Student:
     def __init__(self, first_name, last_name, age):
         """intialize a new student.
@@ -22,7 +23,7 @@ class Student:
         Args:
             attrs (list): (Optional) attributes to rep.
         """
-        if (type(attrs) == list and 
+        if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
