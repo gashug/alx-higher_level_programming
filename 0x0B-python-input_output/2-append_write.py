@@ -8,7 +8,7 @@ def append_write(filename="", text=""):
     Args:
         filename (str): name of the file to append to.
         text (str): string to append
-    
+
     Returns:
         the number of characters written
     """
