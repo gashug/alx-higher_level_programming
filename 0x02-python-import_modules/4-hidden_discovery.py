@@ -1,16 +1,10 @@
 #!/usr/bin/python3
-import imp
-import sys
+import hidden_4
 
 if __name__ == "__main__":
-    module_name = 'hidden_4'
-    module = imp.load_compiled(module_name, module_name + '.pyc')
-
-    names = dir(module)
-
-    names = [name for name in names if not name.startswith('__')]
-
-    names.sort()
+    names = dir(hidden_4)
 
     for name in names:
-        print(name)
+        if name[:2] != '__':
+            """checks the first 2 characters are not underscrores"""
+            print(name)
