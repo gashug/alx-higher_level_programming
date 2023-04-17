@@ -10,5 +10,5 @@ class MyList(list):
     
     def print_sorted(self):
         """Prints list in sorted order"""
-        sorted_list = self.sort()
+        sorted_list = sorted(self)
         return sorted_list
