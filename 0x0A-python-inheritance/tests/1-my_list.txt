@@ -10,7 +10,7 @@ First import function from module:
 
 Sorting of list
 >>> my_list([5, 2, 8, 4, 1])
-[1, 2, 4, 5,8]
+[1, 2, 4, 5, 8]
 
 Sorting of non-integers
 >>> my_list(['for', 'now', 'hare'])
