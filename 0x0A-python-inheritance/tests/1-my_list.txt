@@ -8,6 +8,20 @@ First import function from module:
 
 >>> my_list = __import__('1-my_list').MyList
 
+Check for module docstring:
+>>> d = __import__("1-my_list").__doc__
+>>> len(d) > 1
+True
+
+Check for class docstring:
+>>> c = my_list.__doc__
+>>> len(c) > 1
+True
+
+Check MyList inherits from list:
+>>> issubclass(MyList, list)
+True
+
 Sorting of list
 >>> my_list([5, 2, 8, 4, 1])
 [1, 2, 4, 5, 8]
@@ -16,3 +30,7 @@ Sorting of non-integers
 >>> my_list(['for', 'now', 'hare'])
 Traceback (most recent call last):
 TypeError: a must be an integer
+
+empty list:
+>>> my_list()
+[]
