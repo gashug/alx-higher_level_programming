@@ -3,6 +3,12 @@
 
 
 class MyList(list):
+    """
+    Custom list class that inherits from list.
+    """
 
+    
     def print_sorted(self):
-        return self.sort()
+        """Prints list in sorted order"""
+        sorted_list = self.sort()
+        return sorted_list
