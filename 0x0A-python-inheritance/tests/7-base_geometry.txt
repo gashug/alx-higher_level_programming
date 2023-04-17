@@ -1,0 +1,27 @@
+Import function from module:
+>>> BGy = __import__('7-base_geometry').BaseGeometry
+
+Check for module docstring:
+>>> d = __import__("7-base_geometry").__doc__
+>>> len(d) > 1 
+True
+
+Check for class docstring:
+>>> c = BGy.__doc__
+>>> len(c) > 1
+True
+
+Check for method docstring:
+>>> mthd_1= BGy.area__doc__
+>>> len(mthd_1) > 1
+True
+>>> mthd_2 = BGy.integer_validator.__doc__
+>>> len(mthd_2) > 1
+True
+
+Check area fail:
+>>> BGy().area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+

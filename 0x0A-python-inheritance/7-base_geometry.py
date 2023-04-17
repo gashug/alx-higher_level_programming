@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define an empty class BaseGeometry"""
 
+
 class BaseGeometry:
     """Represents a shape"""
     def area(self):
@@ -10,7 +11,7 @@ class BaseGeometry:
         self.name = name
         self.value = value
 
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("{} must be an integer".format(self.name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(self.name))
