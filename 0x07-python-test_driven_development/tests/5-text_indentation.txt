@@ -1,0 +1,37 @@
+Using ``text_indentaion``
+------------------------
+
+
+Makes sure text is a string
+Prints text with two new lines after each '.', '?', and ':'
+
+Importing the module:
+>>> ti = __import__('5-text_indentation').text_indentation
+
+Check for normalcy:
+>>> ti("Alx? Do Hard Things: That's the motto.)
+Alx?
+<BLANKLINE>
+<BLANKLINE>
+Do Hard Things:
+<BLANKLINE>
+<BLANKLINE>
+That's the motto.
+<BLANKLINE>
+<BLANKLINE>
+
+Check for no string input:
+>>> ti(55)
+Traceback (Most recent call last):
+...
+TypeError: text must be a string
+
+Check for zero special characters:
+>>> ti(Alx)
+Alx
+
+Check for no argument passed:
+>>> ti()
+Traceback (most recent call last):
+...
+TypeError: text_indentation missing 1 required positional argument: 'text'

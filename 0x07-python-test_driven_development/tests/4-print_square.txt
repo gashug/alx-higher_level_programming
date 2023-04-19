@@ -1,0 +1,29 @@
+Using ``print_square``
+---------------------
+
+
+Makes sure size is an int and greater than zero
+Prints a square with the # character
+
+Module import:
+>>> ps = __import__('4-print_square').print_square
+
+Check for size as an int:
+>>> ps(5)
+#####
+#####
+#####
+#####
+#####
+
+Check for non-int:
+>>> ps("foo")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+Check for negative size value:
+>>> ps(-4)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0

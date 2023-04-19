@@ -1,0 +1,28 @@
+Using ``say_name``
+------------------
+
+Makes sure both parameters are strings
+Prints the full name by combining both arguments
+
+Importing the module 
+>>> smn = __import__('3-say_my_name').say_my_name
+
+Check for both args as strings
+>>> smn("Coder", "Gashu")
+My name is Coder Gashu
+
+Check for a string and an int
+>>> smn("Coder", 111)
+Traceback (most recent call last):
+TypeError: last_name must be  a string
+
+Check for an int and a string
+>>> smn(00, "Gashu")
+Traceback (most recent call last):
+TypeError: first_name must be  a string
+
+Check for both args as ints
+>>> smn(00, 111)
+Traceback (most recent call last):
+TypeError: first_name must be  a string
+TypeError: last_name must be  a string
