@@ -7,7 +7,7 @@ class Square(Rectangle):
     """Square class"""
     def __init__(self, size, x=0, y=0, id=None):
         """Constructor method for Rectangle class."""
-        super().__init__(size,size, x, y, id)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """String rep. of Square object"""
@@ -45,5 +45,5 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """"returns a dictionary rep of square"""
-        return {'id' : self.id, 'size' : self.size, 
-                'x' : self.x, 'y' :  self.y}
+        return {'id': self.id, 'size': self.size,
+                'x': self.x, 'y':  self.y}
