@@ -90,3 +90,19 @@ class Rectangle(Base):
         """Returns string rep of rectangle object"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """Updates the attributes of the Rectangle"""
+
+    if len(args) > 0:
+        for i, arg in enumerate(args):
+            if i == 0:
+                self.id = arg
+            elif i == 1:
+                self.width = arg
+            elif i == 2:
+                self.height = arg
+            elif i == 3:
+                self.x = arg
+            elif i == 4:
+                self.y = arg
