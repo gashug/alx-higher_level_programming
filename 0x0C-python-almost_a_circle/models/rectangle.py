@@ -109,3 +109,8 @@ class Rectangle(Base):
             if kwargs and (not args or len(args) == 0):
                 for key, value in kwargs.items():
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """returns the dictionary rep of a rectangle"""
+        return {'id': self.id, 'width': self.width, 'height': self.height, 
+                'x': self.x, 'y': self.y}
