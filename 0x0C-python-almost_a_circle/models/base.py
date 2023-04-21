@@ -46,7 +46,6 @@ class Base():
         else:
             return json.loads(json_string)
 
-
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
