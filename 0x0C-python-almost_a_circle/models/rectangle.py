@@ -82,4 +82,4 @@ class Rectangle(Base):
     def display(self):
         """Prints in std out rectangle instance with #"""
         for i in range(self.__height):
-                print("#" * self.__width)
+            print("#" * self.__width)
