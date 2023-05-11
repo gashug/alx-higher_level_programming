@@ -61,8 +61,8 @@ class Rectangle:
 
         else:
             rec_shape = ""
-            for i in range(self.height):
-                rec_shape += "#" * self.width
-                if i < self.height - 1:
+            for i in range(self.__height):
+                rec_shape += "#" * self.__width
+                if i < self.__height - 1:
                     rec_shape += "\n"
-        return rec_shape
+            return rec_shape
