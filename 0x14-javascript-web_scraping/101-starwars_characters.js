@@ -4,7 +4,7 @@ const request = require('request');
 
 const baseURL = 'https://swapi-api.alx-tools.com/api/';
 
-function printStarWarsCharacters(movieId) {
+function printStarWarsCharacters (movieId) {
   const filmURL = `${baseURL}films/${movieId}/`;
 
   request(filmURL, (error, response, body) => {
@@ -25,7 +25,7 @@ function printStarWarsCharacters(movieId) {
   });
 }
 
-function fetchAndPrintCharacters(characterURLs, index) {
+function fetchAndPrintCharacters (characterURLs, index) {
   if (index >= characterURLs.length) {
     return;
   }
